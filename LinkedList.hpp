@@ -9,10 +9,7 @@ public:
 	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;
 public:
 	LinkedList(void):m_head(NULL),m_tail(NULL),m_count(0){}
-	~LinkedList(void)
-	{
-		destroy();
-	}
+	~LinkedList(void){destroy();}
 	//case flag==1:insert the node behind the pointor
 	//case flag==-1:insert the node before the pointor
 	//return the pointor of the new insert node
