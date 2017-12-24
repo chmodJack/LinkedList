@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FileConverter	FileConverter.hpp	/^	FileConverter(const char* file,unsigned int buffer_size=32*1024*1024):m_buffer(new char[buffer_size])$/;"	f	class:jack::FileConverter
+FileConverter	FileConverter.hpp	/^class FileConverter:virtual public LinkedList<T>$/;"	c	namespace:jack
+LinkedList	LinkedList.hpp	/^	LinkedList(void):m_head(NULL),m_tail(NULL),m_count(0){}$/;"	f	class:jack::LinkedList
+LinkedList	LinkedList.hpp	/^class LinkedList$/;"	c	namespace:jack
+Node	LinkedList.hpp	/^	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;$/;"	t	class:jack::LinkedList	typeref:struct:jack::LinkedList::_Node
+_Node	LinkedList.hpp	/^	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;$/;"	s	class:jack::LinkedList
+__FILECONVERTER_HPP__	FileConverter.hpp	10;"	d
+__LINKEDLIST_HPP__	LinkedList.hpp	11;"	d
+data	LinkedList.hpp	/^	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;$/;"	m	struct:jack::LinkedList::_Node
+destroy	LinkedList.hpp	/^	void destroy(void)$/;"	f	class:jack::LinkedList
+getCount	LinkedList.hpp	/^	unsigned int getCount(void)const$/;"	f	class:jack::LinkedList
+getHead	LinkedList.hpp	/^	Node* getHead(void)const$/;"	f	class:jack::LinkedList
+getTail	LinkedList.hpp	/^	Node* getTail(void)const$/;"	f	class:jack::LinkedList
+insert	LinkedList.hpp	/^	Node* insert(const T& data,Node* position,int flag=1)$/;"	f	class:jack::LinkedList
+insertHead	LinkedList.hpp	/^	Node* insertHead(const T& data)$/;"	f	class:jack::LinkedList
+insertTail	LinkedList.hpp	/^	Node* insertTail(const T& data)$/;"	f	class:jack::LinkedList
+jack	FileConverter.hpp	/^namespace jack$/;"	n
+jack	LinkedList.hpp	/^namespace jack$/;"	n
+last	LinkedList.hpp	/^	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;$/;"	m	struct:jack::LinkedList::_Node	typeref:struct:jack::LinkedList::_Node::_Node
+m_buffer	FileConverter.hpp	/^	char* m_buffer;$/;"	m	class:jack::FileConverter
+m_count	LinkedList.hpp	/^	unsigned int m_count;$/;"	m	class:jack::LinkedList
+m_head	LinkedList.hpp	/^	Node* m_head;$/;"	m	class:jack::LinkedList
+m_tail	LinkedList.hpp	/^	Node* m_tail;$/;"	m	class:jack::LinkedList
+main	main.cpp	/^int main(int argc,char *argv[])$/;"	f
+next	LinkedList.hpp	/^	typedef struct _Node{struct _Node* last;struct _Node* next;T data;}Node;$/;"	m	struct:jack::LinkedList::_Node	typeref:struct:jack::LinkedList::_Node::_Node
+operator ()	LinkedList.hpp	/^	Node* operator()(int index)const$/;"	f	class:jack::LinkedList
+operator +=	LinkedList.hpp	/^	void operator+=(const T& data)$/;"	f	class:jack::LinkedList
+operator []	LinkedList.hpp	/^	const T& operator[](int index)const$/;"	f	class:jack::LinkedList
+pop	LinkedList.hpp	/^	bool pop(Node* node)$/;"	f	class:jack::LinkedList
+popHead	LinkedList.hpp	/^	bool popHead(void)$/;"	f	class:jack::LinkedList
+popTail	LinkedList.hpp	/^	bool popTail(void)$/;"	f	class:jack::LinkedList
+search	LinkedList.hpp	/^	Node* search(bool (*func)(Node* node),int flag=1)const$/;"	f	class:jack::LinkedList
+~FileConverter	FileConverter.hpp	/^	~FileConverter(void)$/;"	f	class:jack::FileConverter
+~LinkedList	LinkedList.hpp	/^	~LinkedList(void){destroy();}$/;"	f	class:jack::LinkedList

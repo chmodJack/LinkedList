@@ -1,7 +1,20 @@
+/*************************************************************************
+    > File Name       : LinkedList.hpp
+    > Author          : chmodJack
+    > Mail            : 158754845@qq.com 
+    > GitHub          : https://github.com/chmodJack 
+    > Created Time    : 2017年12月21日 星期四 11时32分01秒
+    > Description     : Double direction linked list.
+*************************************************************************/
+
 #ifndef __LINKEDLIST_HPP__
 #define __LINKEDLIST_HPP__
 
 #include<stdio.h>
+
+namespace jack
+{
+
 template<typename T>
 class LinkedList
 {
@@ -177,7 +190,7 @@ public:
 		}
 	}
 public:
-	Node* operator[](int index)const
+	Node* operator()(int index)const
 	{
 		if(index>=0)
 		{
@@ -206,6 +219,10 @@ public:
 			return temp;
 		}
 	}
+	const T& operator[](int index)const
+	{
+		return ((*this)(index))->data;
+	}
 	void operator+=(const T& data)
 	{
 		insertTail(data);
@@ -214,6 +231,8 @@ private:
 	Node* m_head;
 	Node* m_tail;
 	unsigned int m_count;
+};
+
 };
 
 #endif//__LINKEDLIST_HPP__
